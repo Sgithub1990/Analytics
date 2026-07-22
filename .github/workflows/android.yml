@@ -5,9 +5,9 @@ name: Android CI
 on:
 
   # Run whenever code is pushed to the main branch
-#  push:
-#    branches:
-#      - main
+  push:
+   branches:
+      - main
 
   # Also run when a Pull Request is created for the main branch
   pull_request:
@@ -51,7 +51,7 @@ jobs:
         run: ./gradlew assembleDebug
 
       # Step 5: Run all local unit tests
-      # Tests inside src/test/
+      # Test inside src/test/
       - name: Run Unit Tests
         run: ./gradlew testDebugUnitTest
 
