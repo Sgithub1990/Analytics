@@ -21,7 +21,7 @@ class MainActivity : ComponentActivity() {
             AnalyticsTheme {
                 Scaffold(modifier = Modifier.fillMaxSize()) { innerPadding ->
                     Greeting(
-                        name = "Android",
+                        name = "shyam",
                         modifier = Modifier.padding(innerPadding)
                     )
                 }
